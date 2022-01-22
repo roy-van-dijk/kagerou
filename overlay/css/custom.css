@@ -34,7 +34,6 @@ body #header {
 
 body nav {
     position: relative;
-    background: black;
     z-index: 6;
 }
 
