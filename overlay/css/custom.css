@@ -15,6 +15,10 @@ body footer {
     display: none;
 }
 
+body.overlay {
+    margin: 0 !important;
+    
+}
 body main {
     box-shadow: none;
 }
@@ -30,6 +34,7 @@ body #header {
 
 body nav {
     position: relative;
+    background: black;
     z-index: 6;
 }
 
@@ -63,4 +68,13 @@ body #patchnote {
 
 #toggle-label:hover {
     cursor: pointer;
+}
+
+.icon-overflow-wrap {
+    margin-left: 0 !important;
+}
+
+.button.dropdown-wrapper.dropdown-trigger {
+    padding-right: 0;
+    width: unset !important;
 }
