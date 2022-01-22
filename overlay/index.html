@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto|Lato">
     <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/custom.css" />
     <link rel="stylesheet" href="../share/css/job-icons.css?v=6" />
     <script>
 try {
@@ -110,6 +111,10 @@ window.addEventListener('load', e => {
     </script>
   </head>
   <body style="overflow:hidden" class="standby">
+
+    <label for="toggle" id="toggle-label"></label>
+    <input type="checkbox" id="toggle">
+    
     <div class="splash">
       <div>
         Failed to load - 초기화 실패
@@ -292,7 +297,9 @@ window.addEventListener('load', e => {
     </nav>
 
     <main>
-      <div id="background"> </div>
+      <div id="background"> 
+        
+      </div>
       <ul>
         <li id="header">
           ..

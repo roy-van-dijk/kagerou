@@ -1,0 +1,66 @@
+/* 
+<label for="toggle" id="toggle-label"></label>
+<input type="checkbox" id="toggle">
+*/
+
+.flex-column.flex-column-deal-pct,
+.flex-column.flex-column-deal-per-second,
+.flex-column.flex-column-deal-critical,
+.flex-column.flex-column-deal-direct,
+.flex-column.flex-column-deal-crit-direct {
+    text-align: right;
+}
+
+body footer {
+    display: none;
+}
+
+body main {
+    box-shadow: none;
+}
+  
+body nav > .container {
+    background: none;
+    box-shadow: none;
+}
+  
+body #header {
+    display: none;
+}
+
+body nav {
+    position: relative;
+    z-index: 6;
+}
+
+body #background {
+    background-color: transparent;
+}
+
+body #init-menu,
+body #patchnote {
+    display: none !important;
+}
+
+#toggle-label {
+    width: 100%;
+    height: 100%;
+    opacity: 0.01;
+    background-color: black;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 5;
+}
+#toggle {
+    display: none;
+}
+
+#toggle:checked ~ nav, 
+#toggle:checked ~ main {
+    opacity: 0.01;
+}
+
+#toggle-label:hover {
+    cursor: pointer;
+}
