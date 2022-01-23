@@ -111,9 +111,6 @@ window.addEventListener('load', e => {
     </script>
   </head>
   <body style="overflow:hidden" class="standby">
-
-    <label for="toggle" id="toggle-label"></label>
-    <input type="checkbox" id="toggle">
     
     <div class="splash">
       <div>
@@ -381,5 +378,14 @@ window.addEventListener('load', e => {
         </span>
       </footer>
     </main>
+
+    <script>
+      const elements = document.querySelectorAll('main > ul, nav, footer');
+      const selectors = document.querySelectorAll('#background, main > ul');
+      const main = document.querySelector('main');
+      main.addEventListener('click', () => {
+        elements.forEach(element => element.classList.toggle('hidden'));
+      });
+    </script>
   </body>
 </html>

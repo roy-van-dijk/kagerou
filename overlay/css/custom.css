@@ -1,6 +1,12 @@
 /* 
-<label for="toggle" id="toggle-label"></label>
-<input type="checkbox" id="toggle">
+<script>
+    const elements = document.querySelectorAll('main > ul, nav, footer');
+    const selectors = document.querySelectorAll('#background, main > ul');
+    const main = document.querySelector('main');
+    main.addEventListener('click', () => {
+        elements.forEach(element => element.classList.toggle('hidden'));
+    });
+</script>
 */
 
 .flex-column.flex-column-deal-pct,
@@ -38,35 +44,13 @@ body nav {
 }
 
 body #background {
-    background-color: transparent;
+    background-color: rgba(0,0,0,0.01);
+    cursor: pointer;
 }
 
 body #init-menu,
 body #patchnote {
     display: none !important;
-}
-
-#toggle-label {
-    width: 100%;
-    height: 100%;
-    opacity: 0.01;
-    background-color: black;
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 5;
-}
-#toggle {
-    display: none;
-}
-
-#toggle:checked ~ nav, 
-#toggle:checked ~ main {
-    opacity: 0.01;
-}
-
-#toggle-label:hover {
-    cursor: pointer;
 }
 
 .icon-overflow-wrap {
@@ -76,4 +60,12 @@ body #patchnote {
 .button.dropdown-wrapper.dropdown-trigger {
     padding-right: 0;
     width: unset !important;
+}
+
+
+::-webkit-scrollbar,
+::-webkit-scrollbar-track,
+::-webkit-scrollbar-thumb,
+::-webkit-scrollbar-corner {
+    display: none;
 }
