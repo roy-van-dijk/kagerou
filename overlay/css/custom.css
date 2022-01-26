@@ -33,6 +33,8 @@ body main:hover {
 body nav > .container {
     background: none;
     box-shadow: none;
+    color: #fff !important;
+    fill: #fff !important;
 }
   
 body #header {
@@ -63,6 +65,9 @@ body #patchnote {
     width: unset !important;
 }
 
+body .history-region, body #history-region {
+    opacity: 1 !important;
+}
 
 ::-webkit-scrollbar,
 ::-webkit-scrollbar-track,
