@@ -17,16 +17,17 @@
     text-align: right;
 }
 
-body footer {
-    display: none;
-}
-
 body.overlay {
     margin: 0 !important;
     
 }
 body main {
     box-shadow: none;
+}
+
+body main:hover {
+    /* background-color: rgba(255,255,255,0.05); */
+    background-color: rgba(255,255,255,0.05);
 }
   
 body nav > .container {
